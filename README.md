@@ -55,8 +55,14 @@ MIMIC-III Demo 데이터는 전체 MIMIC-III 데이터의 축소판이지만,
 ## 4. 프로젝트 구조
 ```
 mimic-readmission-analysis/
-├─ data/ # MIMIC-III demo raw data
-├─ notebooks/ # 분석 단계별 노트북
+├─ data/
+│  ├─ raw/              # Raw MIMIC-III tables (ADMISSIONS, PATIENTS, ICUSTAYS, etc.)
+│  ├─ processed/        # Processed datasets for downstream analysis
+│  │  └─ first_icu_admissions.csv
+│  └─ README.md         # Description of data files and preprocessing steps
+│
+├─ notebooks/           # Analysis notebooks organised by pipeline stage
+│
 └─ README.md
 ```
 
